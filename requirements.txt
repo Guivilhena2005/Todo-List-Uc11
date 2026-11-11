@@ -27,3 +27,15 @@ psycopg[binary]
 # aplicação; uma dependência de desenvolvimento fica na máquina de quem
 # programa. Instalar a suíte de testes no servidor de produção é carregar
 # código que nunca vai rodar lá.
+
+# ---------------------------------------------------------------------------- 
+# Somente para desenvolvimento e testes 
+# ---------------------------------------------------------------------------- 
+# Uma dependência de produção vai para o servidor junto com a aplicação; uma 
+# dependência de desenvolvimento fica na máquina de quem programa. 
+# 
+# O `pytest` entra no Dia 1. O `httpx` só será usado no Dia 7, quando os 
+# testes passarem a fazer requisições HTTP — mas entra junto, para que o 
+# arquivo não precise ser alterado no meio do caminho. 
+pytest 
+httpx 
