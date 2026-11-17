@@ -29,6 +29,7 @@ os.environ["JWT_SECRET"] = "segredo-de-teste-nao-usar-em-produacao"
 
 import pytest  # noqa: E402
 
+from sqlalchemy.orm import Session  # noqa: E402
 from app.security import HashBcrypt  # noqa: E402
 
 # =============================================================================
@@ -84,4 +85,3 @@ def sessao() -> Session:
     finally: 
         sessao.rollback() 
         sessao.close()
-       
