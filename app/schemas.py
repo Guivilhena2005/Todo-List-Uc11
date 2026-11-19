@@ -55,7 +55,6 @@ class UsuarioLogin(EsquemaDeEntrada):
     email: EmailStr
     senha: str
 
-
 class UsuarioOut(EsquemaDeSaida):
     """Dados devolvidos sobre um usuário.
 
@@ -66,7 +65,6 @@ class UsuarioOut(EsquemaDeSaida):
     id: int
     nome: str
     email: EmailStr
-    senha_hash: str
     criado_em: datetime
 
 
